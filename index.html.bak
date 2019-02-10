@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TEST</title>
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+ </head>
+ <body>
+	<div class="wrapper"><!--wrapper start-->
+		<div class="banner"><!--banner start-->
+			
+			<div class="we-animals-content">
+
+			   <div class="container"><!--container start-->
+			    <div class="we-animals-top">
+					<div class="we-animals-content-left">
+						<h1>We <img src="images/heart.png" alt="heart"/> Animals</h1>
+						<p>So we put them where we can see them</p>
+					</div>
+					<div class="we-animals-content-right">
+						<img src="images/lap-animals.png" alt="laptop"/>
+					</div>
+				</div>
+				<div class="we-animals-middle">
+					<p>If you're an animal lover, this FREE extension is a great<br/> way to get your daily dose of cuteness overload.</p>
+					<a href="#" id="continue">Continue</a>
+				</div>
+				<p class="policy">Please read carefully : By clicking the "Continue" button above,you are agreeing to install this extension and agreeing to abide by the End User License Agreement and Privacy Policy. | You can uninstall the extension at any time.</p>
+			   </div><!--container end-->
+
+			</div>
+		</div><!--banner end-->
+		
+		<div class="pet-lovers"><!--pet-lovers start-->
+			<div class="container">
+				<h2>Just a Pet Lover</h2>
+				<div class="pet-lovers-left">
+					<img src="images/love-pets.png" alt="love-pets"/>
+				</div>
+				<div class="pet-lovers-right">
+					<p>Just a Pet Lover Page is made for humans who truly love animals and the environment. The extension highlights interesting animal videos and news and brings you awesome browser wallpapers that will brighten up your day.</p><br/><br/>
+					<p>These features update in real-time. So, you really feel like you're part of the animal kingdom.</p>
+				</div>
+				<p class="policy">Check out our Privacy Policy and Terms of Service pages for more detail</p>
+			</div>
+		</div><!--pet-lovers end-->
+
+
+		<div class="features"><!--features start-->
+			<div class="container">
+				<h2>Features</h2>
+				<ul>
+					<li><img src="images/wallpapers.png" alt="wallpapers"/><span>Adorable Wallpapers</span><p>Find an adorable animal on each new tab, designed to keep your spirits high.</p></li>
+					<li><img src="images/videos.png" alt="videos"/><span>Viral Videos</span><p>Seriously concerning or hilariously wild, you'll know what's going viral.</p></li>
+					<li><img src="images/search.png" alt="search"/><span>Powerful Search</span><p>Enjoy a smooth search engine experience.</p></li>
+					<li><img src="images/tweets.png" alt="tweets"/><span>Trending Tweets</span><p>Receive Twitter updates with important news on your furry friends.</p></li>
+				</ul>
+			</div>
+		</div><!--features end-->
+
+
+		<div class="contact-us"><!--contact-us-->
+			<div class="container">
+				<h2>Contact Us</h2>
+				<h3>We'd love to hear from you!</h3>
+				<span>at: contact@lmpts.com</span>
+			</div>
+		</div><!--contact-us end-->
+
+		<div class="nav-bar"><!--navbar start-->
+			<div class="container">
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Terms of Service </a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<li><a href="#">Uninstall</a></li>
+				</ul>
+			</div>
+		</div><!--navbar end-->
+
+		<div class="feedback"><!--contact-us-->
+			<div class="container">
+				<h3>We're sorry to see you go!</h3>
+				<p>Please help us improve TrailerTab with your feedback.</p>
+
+				<form>
+				  <input type="email" name="email" value="" placeholder="Email ID"/>
+				  <input type="text" name="message" value="" placeholder="Message"/>
+				  <input class="btn" type="submit" value="Send"/>
+				</form>
+			</div>
+		</div><!--contact-us end-->
+
+	</div><!--wrapper end-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div id="myModal" class="modal">
+	  <div class="modal-content">
+		<span class="close">&times;</span>
+		<p>Thank you for downloading."</p>
+	  </div>
+   </div>
+
+
+<!---script start--->
+<script type="text/javascript">
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("continue");
+var span = document.getElementsByClassName("close")[0];
+ btn.onclick = function() {
+ modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<script type="text/javascript">
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!---script end--->
+
+ </body>
+</html>
